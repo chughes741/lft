@@ -12,6 +12,7 @@
 
 #include "../include/libft.h"
 
+// Prepends 'c' to 'str' and frees 'str'
 char	*ft_chr_prepend(int c, char *str)
 {
 	char	*rtn;
