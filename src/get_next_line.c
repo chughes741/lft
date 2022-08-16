@@ -16,6 +16,7 @@
 # define BUFFER_SIZE 10000
 #endif
 
+// NULL terminated read
 static ssize_t	zread(int fd, char *buffer)
 {
 	int	i;
@@ -25,6 +26,7 @@ static ssize_t	zread(int fd, char *buffer)
 	return (i);
 }
 
+// Removes first line in 's'
 static char	*ft_rmvline(char **s)
 {
 	char	*new_stash;
@@ -36,6 +38,7 @@ static char	*ft_rmvline(char **s)
 	return (new_stash);
 }
 
+// Returns next line or rest of the contents at fd
 char	*get_next_line(int fd)
 {
 	static char	*stash;
