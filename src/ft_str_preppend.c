@@ -1,37 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_str_preppend.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chughes <chughes@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/28 17:13:42 by chughes           #+#    #+#             */
-/*   Updated: 2022/03/28 17:13:44 by chughes          ###   ########.fr       */
+/*   Created: 2022/08/16 17:08:51 by chughes           #+#    #+#             */
+/*   Updated: 2022/08/16 17:09:07 by chughes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/libft.h"
 
-// Allocates and duplicates 'src'
-char	*ft_strdup(const char *src)
+// Appends s2 to s1 and frees s1
+char	*ft_str_preppend(char *s1, char *s2)
 {
-	char	*outstr;
-	size_t	len;
-	size_t	i;
+	char	*rtn;
+	int		i;
+	int		j;
 
-	if (src == NULL)
-		return (NULL);
-	i = 0;
-	len = ft_strlen(src);
-	if (len == 0)
-		return (NULL);
-	outstr = ft_calloc((len + 1), sizeof(char));
-	if (outstr == NULL)
-		return (NULL);
-	while (i < len)
-	{
-		outstr[i] = src[i];
-		i++;
-	}
-	return (outstr);
+	i = -1;
+	j = -1;
+	if (s2[0] == '\0')
+		return (s1);
+	rtn = ft_calloc((ft_strlen(s1) + ft_strlen(s2) + 1), sizeof(char));
+	while (s1[++i])
+		rtn[i] = s1[i];
+	while (s2[++j])
+		rtn[i + j] = s2[j];
+	free(s1);
+	return (rtn);
 }

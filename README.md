@@ -1,2 +1,2 @@
 # lft
-Build of ft_printf and libft to use in projects
+Build of libft, ft_printf, and get_next_line to use in projects
