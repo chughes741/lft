@@ -61,9 +61,9 @@ char	*get_next_line(int fd)
 	if (stash == NULL)
 		return (NULL);
 	if (ft_strchr(stash, '\n'))
-		rtn = ft_substr(stash, 0, ft_linelen(stash, '\n') + 1);
+		rtn = ft_substr(stash, 0, ft_linelen(stash) + 1);
 	else
-		rtn = ft_substr(stash, 0, ft_linelen(stash, '\n'));
+		rtn = ft_substr(stash, 0, ft_linelen(stash));
 	stash = ft_rmvline(&stash);
 	return (rtn);
 }
