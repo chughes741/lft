@@ -53,7 +53,7 @@ char	*get_next_line(int fd)
 	{
 		if (stash == NULL)
 			stash = ft_calloc(1, sizeof(char));
-		stash = ft_strappend(stash, buffer);
+		stash = ft_str_append(stash, buffer);
 		if (ft_strchr(stash, '\n'))
 			break ;
 		count = zread(fd, buffer);
