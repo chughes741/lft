@@ -1,4 +1,8 @@
 
+# Special variables
+DEFAULT_GOAL: all
+.PHONY: all bonus clean fclean re
+
 # Hides calls
 VERBOSE	=	FALSE
 ifeq ($(VERBOSE),TRUE)
