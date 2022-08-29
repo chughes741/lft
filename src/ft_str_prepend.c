@@ -13,7 +13,7 @@
 #include "../include/libft.h"
 
 // Appends s2 to s1 and frees s1
-char	*ft_str_preppend(char *s1, char *s2)
+char	*ft_str_prepend(char *s1, char *s2)
 {
 	char	*rtn;
 	int		i;

@@ -46,6 +46,7 @@ char	*get_next_line(int fd)
 	char		*rtn;
 	int			count;
 
+	write(1, "...\n", 4);
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
 	count = zread(fd, buffer);
@@ -53,7 +54,7 @@ char	*get_next_line(int fd)
 	{
 		if (stash == NULL)
 			stash = ft_calloc(1, sizeof(char));
-		stash = ft_str_append(stash, buffer);
+		stash = ft_str_prepend(stash, buffer);
 		if (ft_strchr(stash, '\n'))
 			break ;
 		count = zread(fd, buffer);
