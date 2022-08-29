@@ -32,7 +32,7 @@ SRCS	=	src/ft_atoi.c src/ft_bzero.c src/ft_calloc.c src/ft_chr_prepend.c\
 			src/ft_memset.c src/ft_print_arg.c src/ft_printf.c src/ft_ptoa.c\
 			src/ft_putchar_fd.c src/ft_putendl_fd.c src/ft_putnbr_fd.c\
 			src/ft_putstr_fd.c src/ft_space_to_zero.c src/ft_split.c\
-			src/ft_str_append.c src/ft_str_preppend.c src/ft_strchr.c\
+			src/ft_str_append.c src/ft_str_prepend.c src/ft_strchr.c\
 			src/ft_strdup.c src/ft_striteri.c src/ft_strjoin.c src/ft_strlcat.c\
 			src/ft_strlcpy.c src/ft_strlen.c src/ft_strmapi.c src/ft_strncmp.c\
 			src/ft_strnstr.c src/ft_strrchr.c src/ft_strtrim.c\
