@@ -104,5 +104,6 @@ char	*ft_neg_pop(char *str, _Bool *neg);
 // get_next_line functions
 char	*get_next_line(int fd);
 int		ft_linelen(const char *str);
+char	*ft_str_prepend(char *s1, char *s2);
 
 #endif
