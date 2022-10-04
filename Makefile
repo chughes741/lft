@@ -30,10 +30,12 @@ RM		=	rm -rf
 NAME	=	libft.a
 SRCDIR	=	src/
 OBJDIR	=	bin/
-SRCS	=	src/ft_atoi.c			\
+SRCS	=	src/chr_prepend.c		\
+			src/free_double_array.c	\
+			src/ft_atoi.c			\
 			src/ft_bzero.c			\
 			src/ft_calloc.c			\
-			src/chr_prepend.c		\
+			src/ft_free.c			\
 			src/ft_isalnum.c		\
 			src/ft_isalpha.c		\
 			src/ft_isascii.c		\
@@ -62,8 +64,6 @@ SRCS	=	src/ft_atoi.c			\
 			src/ft_putnbr_fd.c		\
 			src/ft_putstr_fd.c		\
 			src/ft_split.c			\
-			src/str_append.c		\
-			src/str_prepend.c		\
 			src/ft_strchr.c			\
 			src/ft_strdup.c			\
 			src/ft_striteri.c		\
@@ -80,7 +80,10 @@ SRCS	=	src/ft_atoi.c			\
 			src/ft_tolower.c		\
 			src/ft_toupper.c		\
 			src/ft_utoa.c			\
-			src/get_next_line.c
+			src/get_next_line.c		\
+			src/sort_int_tab.c		\
+			src/str_append.c		\
+			src/str_prepend.c
 OBJS	=	$(patsubst $(SRCDIR)%.c,$(OBJDIR)%.o,$(SRCS))
 
 
