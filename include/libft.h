@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chughes <chughes@student.42quebec.com>     +#+  +:+       +#+        */
+/*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 17:16:52 by chughes           #+#    #+#             */
-/*   Updated: 2022/03/28 17:16:54 by chughes          ###   ########.fr       */
+/*   Updated: 2022/10/03 20:31:34 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,6 +83,14 @@ t_list	*ft_lstlast(t_list *lst);
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 t_list	*ft_lstnew(void *content);
 int		ft_lstsize(t_list *lst);
+size_t	ft_strlen_before(char *s, char *c);
+size_t	ft_strlen_until(char *s, char c);
+void	free_double_array(void **array);
+int		ft_numlen_base(long nbr, long base);
+void	sort_int_tab(int *tab, unsigned int size);
+char	*ft_free(void *ptr);
+void	ft_swap(int *a, int *b);
+
 
 // ft_printf functions
 int		ft_printf(const char *form, ...);

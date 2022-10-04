@@ -37,7 +37,10 @@ SRCS	=	src/ft_atoi.c src/ft_bzero.c src/ft_calloc.c src/ft_chr_prepend.c\
 			src/ft_strlcpy.c src/ft_strlen.c src/ft_strmapi.c src/ft_strncmp.c\
 			src/ft_strnstr.c src/ft_strrchr.c src/ft_strtrim.c\
 			src/ft_strupper.c src/ft_substr.c src/ft_tolower.c src/ft_toupper.c\
-			src/ft_utoa.c src/get_next_line.c
+			src/ft_utoa.c src/get_next_line.c src/ft_strlen_before.c\
+			src/ft_strlen_until.c src/free_double_array.c src/ft_free.c\
+			src/sort_int_tab.c src/ft_numlen_base.c src/ft_swap.c
+
 			
 OBJS	=	$(patsubst $(SRCDIR)%.c,$(OBJDIR)%.o,$(SRCS))
 
