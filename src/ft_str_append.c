@@ -6,13 +6,13 @@
 /*   By: chughes <chughes@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/17 09:57:54 by chughes           #+#    #+#             */
-/*   Updated: 2022/05/17 09:57:58 by chughes          ###   ########.fr       */
+/*   Updated: 2022/10/03 20:47:32 by chughes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/libft.h"
 
-// Appends 's2' to 's1' and frees 's2'
+// Appends 's2' to 's1' and frees 's1'
 char	*ft_str_append(char *s1, char *s2)
 {
 	char	*rtn;
@@ -33,6 +33,6 @@ char	*ft_str_append(char *s1, char *s2)
 		rtn[i] = s1[i];
 	while (s2[++j])
 		rtn[i + j] = s2[j];
-	free(s2);
+	free(s1);
 	return (rtn);
 }

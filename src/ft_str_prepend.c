@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_preppend.c                                  :+:      :+:    :+:   */
+/*   ft_str_prepend.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chughes <chughes@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/16 17:08:51 by chughes           #+#    #+#             */
-/*   Updated: 2022/08/16 17:09:07 by chughes          ###   ########.fr       */
+/*   Updated: 2022/10/03 20:48:23 by chughes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/libft.h"
 
-// Appends s2 to s1 and frees s1
+// Prepends 's1' to 's2' and frees 's2'
 char	*ft_str_prepend(char *s1, char *s2)
 {
 	char	*rtn;
@@ -28,6 +28,6 @@ char	*ft_str_prepend(char *s1, char *s2)
 		rtn[i] = s1[i];
 	while (s2[++j])
 		rtn[i + j] = s2[j];
-	free(s1);
+	free(s2);
 	return (rtn);
 }
