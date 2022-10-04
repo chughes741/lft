@@ -58,6 +58,7 @@ SRCS	=	src/chr_prepend.c		\
 			src/ft_memcpy.c			\
 			src/ft_memmove.c		\
 			src/ft_memset.c			\
+			src/ft_numlen_base.c	\
 			src/ft_ptoa.c			\
 			src/ft_putchar_fd.c		\
 			src/ft_putendl_fd.c		\
@@ -71,12 +72,15 @@ SRCS	=	src/chr_prepend.c		\
 			src/ft_strlcat.c		\
 			src/ft_strlcpy.c		\
 			src/ft_strlen.c			\
+			src/ft_strlen_before.c	\
+			src/ft_strlen_until.c	\
 			src/ft_strmapi.c		\
 			src/ft_strncmp.c		\
 			src/ft_strnstr.c		\
 			src/ft_strrchr.c		\
 			src/ft_strtrim.c		\
 			src/ft_substr.c			\
+			src/ft_swap.c			\
 			src/ft_tolower.c		\
 			src/ft_toupper.c		\
 			src/ft_utoa.c			\
