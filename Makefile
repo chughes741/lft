@@ -95,7 +95,7 @@ all: $(NAME)
 
 # Links static library from object files
 $(NAME): $(OBJS)
-	$(HIDE)ar $(AFLAGS) $@ $<
+	$(HIDE)ar $(AFLAGS) $@ $^
 
 # Compiles object files from sources
 $(OBJS): $(OBJDIR)%.o : $(SRCDIR)%.c $(OBJDIR)
