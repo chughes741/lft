@@ -81,7 +81,6 @@ SRCS	=	src/ft_atoi.c			\
 			src/ft_toupper.c		\
 			src/ft_utoa.c			\
 			src/get_next_line.c
-			
 OBJS	=	$(patsubst $(SRCDIR)%.c,$(OBJDIR)%.o,$(SRCS))
 
 
