@@ -30,7 +30,8 @@ RM		=	rm -rf
 NAME	=	libft.a
 SRCDIR	=	src/
 OBJDIR	=	bin/
-SRCS	=	src/chr_prepend.c		\
+SRCS	=	src/chr_append.c		\
+			src/chr_prepend.c		\
 			src/free_double_array.c	\
 			src/ft_atoi.c			\
 			src/ft_bzero.c			\

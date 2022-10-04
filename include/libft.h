@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
+/*   By: chughes <chughes@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 17:16:52 by chughes           #+#    #+#             */
-/*   Updated: 2022/10/03 20:51:00 by chughes          ###   ########.fr       */
+/*   Updated: 2022/10/04 14:49:51 by chughes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,6 @@ void	sort_int_tab(int *tab, unsigned int size);
 char	*ft_free(void *ptr);
 void	ft_swap(int *a, int *b);
 
-
 // ft_printf functions
 char	*ft_itox(int nbr);
 char	*ft_utoa(unsigned int nbr);
@@ -91,5 +90,8 @@ char	*chr_prepend(int c, char *str);
 char	*get_next_line(int fd);
 int		ft_linelen(const char *str);
 char	*str_prepend(char *s1, char *s2);
+
+// New functions
+char	*chr_append(int c, char *str);
 
 #endif
