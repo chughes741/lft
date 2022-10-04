@@ -6,7 +6,7 @@
 /*   By: chughes <chughes@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 10:43:17 by chughes           #+#    #+#             */
-/*   Updated: 2022/05/02 10:43:18 by chughes          ###   ########.fr       */
+/*   Updated: 2022/10/03 20:51:53 by chughes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ char	*get_next_line(int fd)
 	{
 		if (stash == NULL)
 			stash = ft_calloc(1, sizeof(char));
-		stash = ft_str_prepend(stash, buffer);
+		stash = str_prepend(stash, buffer);
 		if (ft_strchr(stash, '\n'))
 			break ;
 		count = zread(fd, buffer);

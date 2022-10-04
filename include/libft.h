@@ -6,7 +6,7 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 17:16:52 by chughes           #+#    #+#             */
-/*   Updated: 2022/10/03 20:31:34 by malord           ###   ########.fr       */
+/*   Updated: 2022/10/03 20:51:00 by chughes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,24 +20,12 @@
 # include <stdbool.h>
 # include <stdio.h>
 
+// Linked list struct
 typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
 }					t_list;
-
-typedef struct t_mod_list
-{
-	unsigned int	dash : 1;
-	unsigned int	plus : 1;
-	unsigned int	space : 1;
-	unsigned int	hash : 1;
-	unsigned int	zero : 1;
-	unsigned int	neg : 1;
-	int				width;
-	int				precision;
-	char			specifier;
-}					t_mod;
 
 // libft functions
 int		ft_atoi(const char *str);
@@ -93,25 +81,15 @@ void	ft_swap(int *a, int *b);
 
 
 // ft_printf functions
-int		ft_printf(const char *form, ...);
-t_mod	*ft_get_mods(char *format);
-void	ft_print_arg(t_mod *mods, va_list args, int *count);
 char	*ft_itox(int nbr);
 char	*ft_utoa(unsigned int nbr);
 char	*ft_ptoa(uintptr_t nbr);
-char	*ft_str_append(char *s1, char *s2);
-char	*ft_format(t_mod *mod, char *str);
-char	*ft_chr_prepend(int c, char *str);
-void	ft_left_justify(char *str);
-void	ft_strupper(char *str);
-void	ft_space_to_zero(char *str);
-char	*ft_format_str(char *str, t_mod *mod);
-char	*ft_min_width(char *str, int width, int zero);
-char	*ft_neg_pop(char *str, _Bool *neg);
+char	*str_append(char *s1, char *s2);
+char	*chr_prepend(int c, char *str);
 
 // get_next_line functions
 char	*get_next_line(int fd);
 int		ft_linelen(const char *str);
-char	*ft_str_prepend(char *s1, char *s2);
+char	*str_prepend(char *s1, char *s2);
 
 #endif

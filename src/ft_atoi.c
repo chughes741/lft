@@ -6,62 +6,32 @@
 /*   By: chughes <chughes@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 17:08:51 by chughes           #+#    #+#             */
-/*   Updated: 2022/03/28 17:09:07 by chughes          ###   ########.fr       */
+/*   Updated: 2022/10/03 20:41:34 by chughes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/libft.h"
 
-// Returns 10^pow
-static int	ft_pow10(int pow)
-{
-	int	result;
-
-	if (pow <= 0)
-		result = 1;
-	else if (pow == 1)
-		result = 10;
-	else
-		result = 10 * ft_pow10(pow - 1);
-	return (result);
-}
-
-// Checks if n is an ASCII whitespace char
-static int	is_space(char n)
-{
-	if (n == ' ' || n == '\n' || n == '\t' || n == '\v' || n == '\f' \
-		|| n == '\r')
-		return (1);
-	else
-		return (0);
-}
-
 // Returns str turned into an int
 int	ft_atoi(const char *str)
 {
-	int	output;
 	int	i;
-	int	j;
+	int	negative;
+	int	result;
 
+	if (str == NULL)
+		return (0);
 	i = 0;
-	j = 0;
-	output = 0;
-	while (str[i] != '\0' && is_space(str[i]) == 1)
+	while (str[i] == '\t' || str[i] == '\n' || str[i] == '\v' ||
+			str[i] == '\f' || str[i] == '\r' || str[i] == ' ')
 		i++;
-	if (str[i] == '-' || str[i] == '+')
+	negative = 1;
+	if (str[i] == '-')
+		negative = -1;
+	if (negative == -1 || str[i] == '+')
 		i++;
-	while (str[i] != '\0' && str[i] >= '0' && str[i] <= '9')
-		i++;
-	while (i >= 0)
-	{
-		if (ft_isdigit(str[i]))
-			output += (str[i] - 48) * ft_pow10(j - 1);
-		else if (str[i] == '-' && j > 0)
-			return (output * -1);
-		else if (str[i] == '+' && j > 0)
-			return (output);
-		i--;
-		j++;
-	}
-	return (output);
+	result = 0;
+	while (str[i] >= '0' && str[i] <= '9')
+		result = (result * 10) + (str[i++] - '0');
+	return (result * negative);
 }
