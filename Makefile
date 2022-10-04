@@ -1,15 +1,24 @@
+#------------------------------------------------------------------------------#
+#                                  GENERICS                                    #
+#------------------------------------------------------------------------------#
 
 # Special variables
 DEFAULT_GOAL: all
+.DELETE_ON_ERROR: $(NAME)
 .PHONY: all bonus clean fclean re
 
-# Hides calls
-VERBOSE	=	FALSE
+# Hide calls
+export VERBOSE	=	TRUE
 ifeq ($(VERBOSE),TRUE)
 	HIDE =
 else
 	HIDE = @
 endif
+
+
+#------------------------------------------------------------------------------#
+#                                VARIABLES                                     #
+#------------------------------------------------------------------------------#
 
 # Compiler and flags
 CC		=	gcc
@@ -75,15 +84,25 @@ SRCS	=	src/ft_atoi.c			\
 			
 OBJS	=	$(patsubst $(SRCDIR)%.c,$(OBJDIR)%.o,$(SRCS))
 
-# Targets
+
+#------------------------------------------------------------------------------#
+#                                 TARGETS                                      #
+#------------------------------------------------------------------------------#
+
 all: $(NAME)
 
+# Links static library from object files
 $(NAME): $(OBJS)
-	$(HIDE)ar $(AFLAGS) $@ $(OBJS)
+	$(HIDE)ar $(AFLAGS) $@ $<
 
-$(OBJS): $(OBJDIR)%.o : $(SRCDIR)%.c
-	$(HIDE)mkdir -p $(OBJDIR)
+# Compiles object files from sources
+$(OBJS): $(OBJDIR)%.o : $(SRCDIR)%.c $(OBJDIR)
 	$(HIDE)$(CC) $(CFLAGS) -c $< -o $@
+
+# Created bin directory
+$(OBJDIR):
+	$(HIDE)mkdir -p $(OBJDIR)
+
 
 # Removes objects
 clean:
