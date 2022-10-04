@@ -6,7 +6,7 @@
 /*   By: chughes <chughes@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 17:16:52 by chughes           #+#    #+#             */
-/*   Updated: 2022/10/03 20:49:35 by chughes          ###   ########.fr       */
+/*   Updated: 2022/10/03 20:51:00 by chughes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,12 +76,12 @@ int		ft_lstsize(t_list *lst);
 char	*ft_itox(int nbr);
 char	*ft_utoa(unsigned int nbr);
 char	*ft_ptoa(uintptr_t nbr);
-char	*ft_str_append(char *s1, char *s2);
-char	*ft_chr_prepend(int c, char *str);
+char	*str_append(char *s1, char *s2);
+char	*chr_prepend(int c, char *str);
 
 // get_next_line functions
 char	*get_next_line(int fd);
 int		ft_linelen(const char *str);
-char	*ft_str_prepend(char *s1, char *s2);
+char	*str_prepend(char *s1, char *s2);
 
 #endif

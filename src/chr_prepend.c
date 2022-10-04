@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_chr_prepend.c                                   :+:      :+:    :+:   */
+/*   chr_prepend.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chughes <chughes@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/18 09:57:54 by chughes           #+#    #+#             */
-/*   Updated: 2022/10/03 20:44:00 by chughes          ###   ########.fr       */
+/*   Updated: 2022/10/03 20:51:15 by chughes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/libft.h"
 
 // Prepends 'c' to 'str' and frees 'str'
-char	*ft_chr_prepend(int c, char *str)
+char	*chr_prepend(int c, char *str)
 {
 	char	*rtn;
 
