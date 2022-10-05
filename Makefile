@@ -88,7 +88,8 @@ SRCS	=	src/chr_append.c		\
 			src/get_next_line.c		\
 			src/sort_int_tab.c		\
 			src/str_append.c		\
-			src/str_prepend.c
+			src/str_prepend.c		\
+			src/strndup.c
 OBJS	=	$(patsubst $(SRCDIR)%.c,$(OBJDIR)%.o,$(SRCS))
 
 
