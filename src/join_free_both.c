@@ -6,11 +6,11 @@
 /*   By: chughes <chughes@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 20:00:34 by chughes           #+#    #+#             */
-/*   Updated: 2022/10/05 12:38:25 by chughes          ###   ########.fr       */
+/*   Updated: 2022/10/06 21:34:12 by chughes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/minishell.h"
+#include "../include/libft.h"
 
 // Appends 's2' to 's1' and frees both
 char	*join_free_both(char *s1, char *s2)

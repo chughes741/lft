@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim_free.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
+/*   By: chughes <chughes@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 16:09:33 by malord            #+#    #+#             */
-/*   Updated: 2022/10/06 16:13:07 by malord           ###   ########.fr       */
+/*   Updated: 2022/10/06 21:33:59 by chughes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/libft.h"
 
-// Trims 'set' char from either side of 's1'
-char	*ft_strtrim(char const *s1, char const *set)
+// Trims 'set' char from either side of 's1', frees s1
+char	*ft_strtrim_free(char *s1, char const *set)
 {
 	char			*rtn;
 	unsigned int	start;
