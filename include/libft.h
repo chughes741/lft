@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chughes <chughes@student.42quebec.com>     +#+  +:+       +#+        */
+/*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 17:16:52 by chughes           #+#    #+#             */
-/*   Updated: 2022/10/05 12:57:00 by chughes          ###   ########.fr       */
+/*   Updated: 2022/10/06 16:09:20 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,6 +78,10 @@ int		ft_numlen_base(long nbr, long base);
 void	sort_int_tab(int *tab, unsigned int size);
 char	*ft_free(void *ptr);
 void	ft_swap(int *a, int *b);
+void	*xfree(void *ptr);
+char	*strcdup(char *basestr, char *matchchrs);
+char	*join_free_both(char *s1, char *s2);
+char	*ft_strtrim_free(char const *s1, char const *set);
 
 // ft_printf functions
 char	*ft_itox(int nbr);

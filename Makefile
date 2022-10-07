@@ -80,16 +80,20 @@ SRCS	=	src/chr_append.c		\
 			src/ft_strnstr.c		\
 			src/ft_strrchr.c		\
 			src/ft_strtrim.c		\
+			src/ft_strtrim_free.c	\
 			src/ft_substr.c			\
 			src/ft_swap.c			\
 			src/ft_tolower.c		\
 			src/ft_toupper.c		\
 			src/ft_utoa.c			\
 			src/get_next_line.c		\
+			src/join_free_both.c	\
 			src/sort_int_tab.c		\
 			src/str_append.c		\
 			src/str_prepend.c		\
-			src/strndup.c
+			src/strcdup.c			\
+			src/strndup.c			\
+			src/xfree.c
 OBJS	=	$(patsubst $(SRCDIR)%.c,$(OBJDIR)%.o,$(SRCS))
 
 
