@@ -6,7 +6,7 @@
 /*   By: chughes <chughes@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 20:00:34 by chughes           #+#    #+#             */
-/*   Updated: 2022/10/06 21:34:12 by chughes          ###   ########.fr       */
+/*   Updated: 2022/10/11 15:10:24 by chughes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,12 @@ char	*join_free_both(char *s1, char *s2)
 	int		i;
 	int		j;
 
-	if (s1 == NULL || s2 == NULL)
-	{
-		free(s2);
+	if (s1 == NULL)
+		return (s2);
+	else if (s2 == NULL)
+		return (s1);
+	else if (s1 == NULL && s2 == NULL)
 		return (NULL);
-	}
 	i = -1;
 	j = -1;
 	rtn = ft_calloc((ft_strlen(s1) + ft_strlen(s2) + 1), sizeof(char));
