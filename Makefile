@@ -93,6 +93,7 @@ SRCS	=	src/chr_append.c		\
 			src/str_prepend.c		\
 			src/strcdup.c			\
 			src/strndup.c			\
+			src/strpop.c			\
 			src/xfree.c
 OBJS	=	$(patsubst $(SRCDIR)%.c,$(OBJDIR)%.o,$(SRCS))
 

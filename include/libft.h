@@ -6,7 +6,7 @@
 /*   By: chughes <chughes@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 17:16:52 by chughes           #+#    #+#             */
-/*   Updated: 2022/10/06 21:33:19 by chughes          ###   ########.fr       */
+/*   Updated: 2022/10/11 11:45:00 by chughes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,5 +98,6 @@ char	*str_prepend(char *s1, char *s2);
 // New functions
 char	*chr_append(int c, char *str);
 char	*ft_strndup(const char *str, int n);
+char	*strpop(char *str, int position);
 
 #endif
