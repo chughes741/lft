@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chughes <chughes@student.42quebec.com>     +#+  +:+       +#+        */
+/*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 17:16:52 by chughes           #+#    #+#             */
-/*   Updated: 2022/10/11 11:45:00 by chughes          ###   ########.fr       */
+/*   Updated: 2022/10/12 14:42:32 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #ifndef LIBFT_H
 # define LIBFT_H
@@ -81,6 +82,8 @@ void	ft_swap(int *a, int *b);
 void	*xfree(void *ptr);
 char	*strcdup(char *basestr, char *matchchrs);
 char	*join_free_both(char *s1, char *s2);
+char	*ft_strtrim_free(char const *s1, char const *set);
+int		*int_realloc(int *old_array, int size);
 char	*ft_strtrim_free(char *s1, char const *set);
 
 // ft_printf functions

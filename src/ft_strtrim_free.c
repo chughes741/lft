@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim_free.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chughes <chughes@student.42quebec.com>     +#+  +:+       +#+        */
+/*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 16:09:33 by malord            #+#    #+#             */
-/*   Updated: 2022/10/06 21:33:59 by chughes          ###   ########.fr       */
+/*   Updated: 2022/10/12 14:41:41 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "../include/libft.h"
 
@@ -28,6 +29,6 @@ char	*ft_strtrim_free(char *s1, char const *set)
 	while (ft_strchr(set, (int)s1[len]) != NULL && start <= len)
 		len--;
 	rtn = ft_substr(s1, start, (len - start + 1));
-	free(s1);
+	free((void *)s1);
 	return (rtn);
 }

@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   join_free_both.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chughes <chughes@student.42quebec.com>     +#+  +:+       +#+        */
+/*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 20:00:34 by chughes           #+#    #+#             */
-/*   Updated: 2022/10/11 15:10:24 by chughes          ###   ########.fr       */
+/*   Updated: 2022/10/12 14:41:45 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "../include/libft.h"
 
