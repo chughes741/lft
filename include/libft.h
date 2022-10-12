@@ -6,9 +6,10 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 17:16:52 by chughes           #+#    #+#             */
-/*   Updated: 2022/10/12 14:38:39 by malord           ###   ########.fr       */
+/*   Updated: 2022/10/12 14:42:32 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #ifndef LIBFT_H
 # define LIBFT_H
@@ -83,6 +84,7 @@ char	*strcdup(char *basestr, char *matchchrs);
 char	*join_free_both(char *s1, char *s2);
 char	*ft_strtrim_free(char const *s1, char const *set);
 int		*int_realloc(int *old_array, int size);
+char	*ft_strtrim_free(char *s1, char const *set);
 
 // ft_printf functions
 char	*ft_itox(int nbr);
@@ -99,5 +101,6 @@ char	*str_prepend(char *s1, char *s2);
 // New functions
 char	*chr_append(int c, char *str);
 char	*ft_strndup(const char *str, int n);
+char	*strpop(char *str, int position);
 
 #endif

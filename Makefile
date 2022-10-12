@@ -8,7 +8,7 @@ DEFAULT_GOAL: all
 .PHONY: all bonus clean fclean re
 
 # Hide calls
-export VERBOSE	=	TRUE
+export VERBOSE	=	FALSE
 ifeq ($(VERBOSE),TRUE)
 	HIDE =
 else
@@ -93,7 +93,8 @@ SRCS	=	src/chr_append.c		\
 			src/str_append.c		\
 			src/str_prepend.c		\
 			src/strcdup.c			\
-			src/strndup.c			\
+			src/ft_strndup.c		\
+			src/strpop.c			\
 			src/xfree.c
 OBJS	=	$(patsubst $(SRCDIR)%.c,$(OBJDIR)%.o,$(SRCS))
 
