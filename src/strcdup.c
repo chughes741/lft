@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   strcdup.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chughes <chughes@student.42quebec.com>     +#+  +:+       +#+        */
+/*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 12:44:50 by chughes           #+#    #+#             */
-/*   Updated: 2022/10/02 17:51:07 by chughes          ###   ########.fr       */
+/*   Updated: 2022/10/12 14:33:42 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/minishell.h"
+#include "../include/libft.h"
 
 // Returns dupe of basestring until first char in match or \0
 char	*strcdup(char *basestr, char *matchchrs)

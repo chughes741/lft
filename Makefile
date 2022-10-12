@@ -87,6 +87,7 @@ SRCS	=	src/chr_append.c		\
 			src/ft_toupper.c		\
 			src/ft_utoa.c			\
 			src/get_next_line.c		\
+			src/int_realloc.c		\
 			src/join_free_both.c	\
 			src/sort_int_tab.c		\
 			src/str_append.c		\

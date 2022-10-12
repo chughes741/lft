@@ -6,7 +6,7 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 17:16:52 by chughes           #+#    #+#             */
-/*   Updated: 2022/10/06 16:09:20 by malord           ###   ########.fr       */
+/*   Updated: 2022/10/12 14:38:39 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,6 +82,7 @@ void	*xfree(void *ptr);
 char	*strcdup(char *basestr, char *matchchrs);
 char	*join_free_both(char *s1, char *s2);
 char	*ft_strtrim_free(char const *s1, char const *set);
+int		*int_realloc(int *old_array, int size);
 
 // ft_printf functions
 char	*ft_itox(int nbr);

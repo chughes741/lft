@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   xfree.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chughes <chughes@student.42quebec.com>     +#+  +:+       +#+        */
+/*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 12:48:27 by chughes           #+#    #+#             */
-/*   Updated: 2022/10/04 18:50:14 by chughes          ###   ########.fr       */
+/*   Updated: 2022/10/12 14:33:53 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/minishell.h"
+#include "../include/libft.h"
 
 void	*xfree(void *ptr)
 {

@@ -1,39 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   join_free_both.c                                   :+:      :+:    :+:   */
+/*   int_realloc.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/04 20:00:34 by chughes           #+#    #+#             */
-/*   Updated: 2022/10/12 14:33:25 by malord           ###   ########.fr       */
+/*   Created: 2022/10/12 14:34:25 by malord            #+#    #+#             */
+/*   Updated: 2022/10/12 14:39:38 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/libft.h"
 
-// Appends 's2' to 's1' and frees both
-char	*join_free_both(char *s1, char *s2)
+int	*int_realloc(int *old_array, int size)
 {
-	char	*rtn;
+	int		*new_array;
 	int		i;
-	int		j;
 
-	if (s1 == NULL || s2 == NULL)
+	new_array = ft_calloc(size + 1, sizeof(int));
+	i = 0;
+	while (old_array[i] && i < size)
 	{
-		free(s2);
-		return (NULL);
+		new_array[i] = old_array[i];
+		i++;
 	}
-	i = -1;
-	j = -1;
-	rtn = ft_calloc((ft_strlen(s1) + ft_strlen(s2) + 1), sizeof(char));
-	if (rtn == NULL)
-		return (NULL);
-	while (s1[++i])
-		rtn[i] = s1[i];
-	while (s2[++j])
-		rtn[i + j] = s2[j];
-	xfree(s1);
-	xfree(s2);
-	return (rtn);
+	old_array = xfree(old_array);
+	return (new_array);
 }

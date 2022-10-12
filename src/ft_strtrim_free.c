@@ -6,7 +6,7 @@
 /*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 16:09:33 by malord            #+#    #+#             */
-/*   Updated: 2022/10/06 16:13:07 by malord           ###   ########.fr       */
+/*   Updated: 2022/10/12 14:33:02 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (ft_strchr(set, (int)s1[len]) != NULL && start <= len)
 		len--;
 	rtn = ft_substr(s1, start, (len - start + 1));
-	free(s1);
+	free((void *)s1);
 	return (rtn);
 }
