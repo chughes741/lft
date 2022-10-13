@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chughes <chughes@student.42quebec.com>     +#+  +:+       +#+        */
+/*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 17:16:52 by chughes           #+#    #+#             */
-/*   Updated: 2022/10/13 12:03:17 by chughes          ###   ########.fr       */
+/*   Updated: 2022/10/13 15:59:30 by malord           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,6 +84,7 @@ char	*strcdup(char *basestr, char *matchchrs);
 char	*join_free_both(char *s1, char *s2);
 int		*int_realloc(int *old_array, int old_size, int size);
 char	*ft_strtrim_free(char *s1, char const *set);
+int		ft_isspace(char c);
 
 // ft_printf functions
 char	*ft_itox(int nbr);
