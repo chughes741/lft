@@ -48,17 +48,17 @@ static char	**makestrarray(unsigned int count)
 // Splits 's' into multiple strings, 'c' is seperator
 char	**ft_split(char const *s, char c)
 {
-	char			**rtn;
-	unsigned int	wordcount;
-	unsigned int	start;
-	unsigned int	end;
+	char		**rtn;
+	unsigned	wordcount;
+	unsigned	end;
+	int			start;
 
 	wordcount = ft_wordcount(s, c);
 	rtn = makestrarray(wordcount);
 	if (rtn == NULL || wordcount == 0)
 		return (rtn);
 	start = (unsigned int)ft_strlen(s) - 1;
-	while (s[start] && start >= 0 && wordcount >= 0)
+	while (s[start] && start >= 0)
 	{
 		while (s[start] && start > 0 && s[start] == c)
 			start--;

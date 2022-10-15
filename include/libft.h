@@ -20,6 +20,7 @@
 # include <string.h>
 # include <stdbool.h>
 # include <stdio.h>
+# include <stdint.h>
 
 // Linked list struct
 typedef struct s_list
