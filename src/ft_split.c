@@ -6,7 +6,7 @@
 /*   By: chughes <chughes@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 13:39:58 by chughes           #+#    #+#             */
-/*   Updated: 2022/03/29 13:40:39 by chughes          ###   ########.fr       */
+/*   Updated: 2022/10/18 14:45:35 by chughes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ static size_t	ft_wordcount(char const *s, char c)
 
 	i = 1;
 	wordcount = 0;
-	if (*s == '\0')
+	if (s == NULL || *s == '\0')
 		return (wordcount);
 	if (s[0] != c && s[0] != '\0')
 		wordcount = 1;
