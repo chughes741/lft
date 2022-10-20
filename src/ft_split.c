@@ -6,7 +6,7 @@
 /*   By: chughes <chughes@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 13:39:58 by chughes           #+#    #+#             */
-/*   Updated: 2022/10/18 14:45:35 by chughes          ###   ########.fr       */
+/*   Updated: 2022/10/20 15:37:19 by chughes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,10 +48,10 @@ static char	**makestrarray(unsigned int count)
 // Splits 's' into multiple strings, 'c' is seperator
 char	**ft_split(char const *s, char c)
 {
-	char		**rtn;
-	unsigned	wordcount;
-	unsigned	end;
-	int			start;
+	char			**rtn;
+	unsigned int	wordcount;
+	unsigned int	end;
+	int				start;
 
 	wordcount = ft_wordcount(s, c);
 	rtn = makestrarray(wordcount);

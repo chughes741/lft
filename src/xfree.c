@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   xfree.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
+/*   By: chughes <chughes@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 12:48:27 by chughes           #+#    #+#             */
-/*   Updated: 2022/10/12 14:41:49 by malord           ###   ########.fr       */
+/*   Updated: 2022/10/20 15:38:00 by chughes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "../include/libft.h"
 

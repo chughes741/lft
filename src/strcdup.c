@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   strcdup.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malord <malord@student.42quebec.com>       +#+  +:+       +#+        */
+/*   By: chughes <chughes@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 12:44:50 by chughes           #+#    #+#             */
-/*   Updated: 2022/10/12 14:41:47 by malord           ###   ########.fr       */
+/*   Updated: 2022/10/20 15:37:52 by chughes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "../include/libft.h"
 
